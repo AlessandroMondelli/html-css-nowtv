@@ -122,9 +122,8 @@
     }
 }
 
-@media screen and (max-width:992px) {
-
-    .container {
+@media screen and (max-width:1023px) {
+    .row {
         width: 750px;
     }
 
@@ -230,8 +229,7 @@
 }
 
 @media screen and (max-width: 768px) {
-
-    .container {
+    .row {
         width: 100%;
         padding: 0 15px;
     }

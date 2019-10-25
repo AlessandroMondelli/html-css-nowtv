@@ -167,7 +167,7 @@ header {
     font-size: 36px;
 }
 
-#info h2,h3 {
+ h2,h3 {
     text-transform: uppercase;
 }
 
@@ -197,6 +197,7 @@ header {
 #sport {
     background-color: #1C5EEA;
     color: white;
+    padding-bottom: 30px;
 }
 
 #sport .row {
@@ -204,13 +205,89 @@ header {
 }
 
 #sport h2 {
-    text-transform: uppercase;
     font-size: 30px;
     padding-top: 25px;
 }
 
 #sport img {
     padding-top: 15px;
+}
+
+/*** Stick ***/
+
+#stick {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#stick .row h2 {
+    font-size: 30px;
+}
+
+#stick .row p {
+    padding: 20px 0;
+}
+
+#stick .row img {
+    padding-bottom: 10px;
+}
+
+#stick .row .button {
+    padding: 10px 35px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*** Footer ***/
+
+footer {
+    background-color: #1C1C21;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    color: white;
+}
+
+footer .text li {
+    padding-bottom: 20px;
+}
+
+footer .text span {
+    text-transform: uppercase;
+}
+
+footer #icons {
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+footer #icons a {
+    padding-right: 15px;
+}
+
+footer #cop {
+    font-size: 12px;
+    color: #aaacb1;
+    padding-top: 20px;
+}
+
+footer #cop p {
+    max-width: 74%;
+}
+
+footer #cop span {
+    text-decoration: underline;
+    color: white;
 }
 
 /*** Media Query ***/
@@ -279,6 +356,45 @@ header {
     #jumbo-text {
         top: 390px;
     }
+
+    footer .row  {
+        text-align: center;
+    }
+
+    footer img {
+        padding-bottom: 40px;
+    }
+
+    footer .text,.icons {
+        font-size: 16px;
+    }
+
+    footer .text:first-child {
+        margin-right: 20px;
+    }
+
+    footer .text a {
+        padding: 10px 0;
+    }
+
+    footer .text li:first-child{
+        padding: 10px 50px;
+        border-top: 1px solid rgba(255,255,255,0.25);
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+    }
+
+    footer .text li:not(:first-child) {
+        padding: 10px 50px;
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+    }
+
+    footer #icons {
+        margin-top: 25px;
+    }
+
+    footer #cop p {
+        max-width: 95%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -323,7 +439,7 @@ header {
         margin-left: 0;
     }
 
-    #info h2 {
+    h2 {
         font-size: 22px;
     }
 
@@ -339,6 +455,22 @@ header {
     .row #info_text p {
         font-size: 14px;
         max-width: 100%;
+    }
+
+    #sport .row h2 {
+        font-size: 22px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #stick .row h2 {
+        font-size: 22px;
+    }
+
+    #stick .row p {
+        font-size: 14px;
     }
 
 }
